@@ -8,3 +8,11 @@ ax.axvline('1955-12-01', color='red', linestyle='--')
 ax.set_xlabel('Date', fontsize=12)
 ax.set_title('Number of Monthly Airline Passengers', fontsize=12)
 plt.show()
+
+
+# Print out the number of missing values
+print(airline.isnull().sum())
+
+# Print out summary statistics of the airline DataFrame
+print(airline.describe())
+
