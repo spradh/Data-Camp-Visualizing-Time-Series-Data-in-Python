@@ -2,7 +2,7 @@
 jobs_subset = jobs[['Finance', 'Information', 'Manufacturing', 'Construction']]
 
 # Print the first 5 rows of jobs_subset
-print(jobs.head())
+print(jobs_subset.head())
 
 # Create a facetted graph with 2 rows and 2 columns
 ax = jobs_subset.plot(subplots=True,
