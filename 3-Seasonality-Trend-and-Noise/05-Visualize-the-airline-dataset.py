@@ -16,3 +16,13 @@ print(airline.isnull().sum())
 # Print out summary statistics of the airline DataFrame
 print(airline.describe())
 
+# Get month for each dates from the index of airline
+index_month = airline.index.month
+print(airline.info())
+# Compute the mean number of passengers for each month of the year
+mean_airline_by_month = airline.groupby(index_month).mean()
+
+# Plot the mean number of passengers for each month of the year
+mean_airline_by_month.plot()
+plt.legend(fontsize=20)
+plt.show()
